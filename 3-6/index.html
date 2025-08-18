@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>問6</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script src="./app.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <button id="open">開く</button>
+    </main>
+
+    <!-- モーダルルート：is-open クラスで開閉制御 -->
+    <div id="modal-root" class="modal-root" aria-hidden="true">
+      <div class="overlay" data-close="overlay"></div>
+      <div class="modal" role="dialog" aria-modal="true" aria-labelledby="ttl">
+        <h2 id="ttl">モーダル</h2>
+        <p>Esc / 背景クリック / 閉じるで閉じる。</p>
+        <button id="close">閉じる</button>
+      </div>
+    </div>
+  </body>
+</html>

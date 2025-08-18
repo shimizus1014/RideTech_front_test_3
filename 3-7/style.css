@@ -1,0 +1,39 @@
+:root {
+  --gap: 10px;
+  --dur: 0.25s;
+}
+
+.toasts {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+  z-index: 9999;
+}
+
+.toast {
+  min-width: 240px;
+  background: #333;
+  color: #fff;
+  border-radius: 8px;
+  padding: 12px 14px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  /* TODO: 出現時のアニメ（@keyframes or transition）を指定（例：フェード＋スライドイン） */
+}
+
+.toast.hide {
+  /* TODO: 退場アニメ（フェードアウト＋軽い移動）を指定。終了後に JS で remove する */
+}
+
+.toast button {
+  margin-left: auto;
+  color: #fff;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
