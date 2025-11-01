@@ -33,7 +33,10 @@
 }
 .modal-root.is-open .overlay {
   /* TODO: フェードイン後の opacity を指定 */
+  opacity:0.5;
 }
 .modal-root.is-open .modal {
   /* TODO: translate を 0 に、opacity を 1 にする */
+  translate:0;
+  opacity:1.0;
 }
